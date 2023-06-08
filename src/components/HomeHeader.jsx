@@ -15,6 +15,7 @@ const HomeHeader = () => {
         <button className='bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 shadow-md transition-shadow '>
           Sign in
         </button>
+        
       </div>
     </header>
   )
