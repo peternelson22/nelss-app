@@ -45,14 +45,14 @@ const HomeSearch = () => {
         <button onClick={handleSubmit} className='btn'>
           Google search
         </button>
-        <button disabled={loading} onClick={randomSearch} className='btn'>
+        <button disabled={loading} onClick={randomSearch} className='btn flex items-center justify-center disabled:opacity-80'>
           {loading ? (
             <Image
               src='spinner.svg'
               alt='loading...'
               width={30}
               height={30}
-              className='h-8 text-center flex items-center justify-center disabled:opacity-80'
+              className='h-8 text-center'
             />
           ) : (
             'I Am Feeling Fucky'
