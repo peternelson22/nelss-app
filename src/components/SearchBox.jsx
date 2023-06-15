@@ -17,6 +17,10 @@ const SearchBox = () => {
     if (!term.trim()) return
     router.push(`search/web?searchTerm=${term}`)
   }
+  const clearSearch = () => {
+    setTerm('')
+    router.push(`search/web?searchTerm=${''}`)
+  }
   return (
     <form
       onSubmit={handleSubmit}
@@ -30,7 +34,7 @@ const SearchBox = () => {
       />
       <RxCross2
         className='text-2xl text-gray-500 cursor-pointer sm:mr-2'
-        onClick={() => setTerm('')}
+        onClick={clearSearch}
       />
       <BsFillMicFill className='hidden sm:inline-flex text-4xl text-blue-500 pl-4 border-l-2 border-gray-300 mr-3' />
       <AiOutlineSearch
