@@ -1,6 +1,8 @@
+import WebSearchResults from '@/components/WebSearchResults'
 import Link from 'next/link'
 
 const WebSearch = async ({ searchParams }) => {
+  await new Promise((resolve) => setTimeout(resolve, 10000))
   const res =
     await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}
 `)
@@ -16,16 +18,13 @@ const WebSearch = async ({ searchParams }) => {
         <h1 className='text-3xl mb-4'> No results found</h1>
         <p className='text-lg'>
           Try searching something else or go back to home page{' '}
-          <Link href='/' className='text-blue-500'>Home</Link>
+          <Link href='/' className='text-blue-500'>
+            Home
+          </Link>
         </p>
       </div>
     )
   }
-  return (
-    <>
-      {results &&
-        results.map((result) => <h1 key={result.cacheId}>{result.title}</h1>)}
-    </>
-  )
+  return <>{results && <WebSearchResults results={data} />}</>
 }
 export default WebSearch
