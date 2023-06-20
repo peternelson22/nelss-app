@@ -1,16 +1,16 @@
-import WebSearchResults from '@/components/WebSearchResults'
-import Link from 'next/link'
+import WebSearchResults from '@/components/WebSearchResults';
+import Link from 'next/link';
 
 const WebSearch = async ({ searchParams }) => {
-  await new Promise((resolve) => setTimeout(resolve, 10000))
+  //await new Promise((resolve) => setTimeout(resolve, 10000))
   const res =
     await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}
-`)
+`);
   if (!res.ok) {
-    throw new Error('Something went wrong')
+    throw new Error('Something went wrong');
   }
-  const data = await res.json()
-  const results = data.items
+  const data = await res.json();
+  const results = data.items;
 
   if (!results) {
     return (
@@ -23,8 +23,8 @@ const WebSearch = async ({ searchParams }) => {
           </Link>
         </p>
       </div>
-    )
+    );
   }
-  return <>{results && <WebSearchResults results={data} />}</>
-}
-export default WebSearch
+  return <>{results && <WebSearchResults results={data} />}</>;
+};
+export default WebSearch;
