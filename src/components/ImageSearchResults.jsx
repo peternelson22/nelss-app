@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
+import Pagination from './Pagination';
 
 const ImageSearchResults = ({ results }) => {
   return (
@@ -28,6 +29,9 @@ const ImageSearchResults = ({ results }) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className='ml-0 sm:ml-8 pb-10 sm:pb-0'>
+        <Pagination/>
       </div>
     </div>
   );
