@@ -23,7 +23,7 @@ const SearchHeaderOptions = () => {
         }`}
       >
         <AiOutlineSearch className='text-md' />
-        <p>All</p>
+        <p>Web</p>
       </div>
       <div
         onClick={() => selectTab('Images')}

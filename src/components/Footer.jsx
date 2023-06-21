@@ -1,8 +1,8 @@
-import CountryLookup from "./CountryLookup"
+import CountryLookup from './CountryLookup';
 
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full">
+    <footer className='absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full'>
       <div className='border-b px-8 py-3'>
         <CountryLookup />
       </div>
@@ -20,6 +20,6 @@ const Footer = () => {
         </ul>
       </div>
     </footer>
-  )
-}
-export default Footer
+  );
+};
+export default Footer;

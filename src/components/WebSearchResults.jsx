@@ -10,7 +10,7 @@ const WebSearchResults = ({ results }) => {
         {results.searchInformation?.formattedSearchTime} seconds)
       </p>
       {results.items?.map((result) => (
-        <div className='mb-8 max-w-2xl' key={result.link}>
+        <div className='mb-6 max-w-2xl' key={result.link}>
           <div className='group flex flex-col'>
             <Link className='text-sm truncate' href={result.link}>
               {result.formattedUrl}
@@ -23,7 +23,9 @@ const WebSearchResults = ({ results }) => {
             </Link>
           </div>
           <p className='text-gray-600'>{Parser(result.htmlSnippet)}</p>
+          <hr className='mt-2 bg-gray-50 shadow-sm'/>
         </div>
+      
       ))}
       <Pagination />
     </div>
