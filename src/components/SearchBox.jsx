@@ -24,16 +24,16 @@ const SearchBox = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center'
+      className='flex border border-gray-200 rounded-full shadow-lg sm:px-6 px-2 sm:py-3 py-1.5  ml-5 sm:ml-10 sm:mr-5 mr-2 flex-grow max-w-sm sm:max-w-3xl items-center'
     >
       <input
         type='text'
-        className='w-full focus:outline-none'
+        className='w-24 sm:w-full focus:outline-none'
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
       <RxCross2
-        className='text-2xl text-gray-500 cursor-pointer sm:mr-2'
+        className='hidden sm:inline-flex text-2xl text-gray-500 cursor-pointer sm:mr-2'
         onClick={clearSearch}
       />
       <BsFillMicFill className='hidden sm:inline-flex text-4xl text-blue-500 pl-4 border-l-2 border-gray-300 mr-3' />
