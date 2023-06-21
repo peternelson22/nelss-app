@@ -1,5 +1,6 @@
-import Link from 'next/link'
-import { TbGridDots } from 'react-icons/tb'
+import Link from 'next/link';
+import { TbGridDots } from 'react-icons/tb';
+import SignInButton from './SignInButton';
 
 const HomeHeader = () => {
   return (
@@ -12,12 +13,9 @@ const HomeHeader = () => {
           Images
         </Link>
         <TbGridDots className='bg-transparent hover:bg-gray-200 rounded-full text-4xl p-2' />
-        <button className='bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 shadow-md transition-shadow '>
-          Sign in
-        </button>
-        
+        <SignInButton />
       </div>
     </header>
-  )
-}
-export default HomeHeader
+  );
+};
+export default HomeHeader;
