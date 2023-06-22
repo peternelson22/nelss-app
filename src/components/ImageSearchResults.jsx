@@ -17,17 +17,18 @@ const ImageSearchResults = ({ results }) => {
                 />
               </Link>
               <Link href={result.image.contextLink}>
-                <h2 className='group-hover:underline truncate text-sm text-yellow-700'>
+                <h2 className='group-hover:underline truncate text-sm text-yellow-700 dark:text-yellow-300'>
                   {result.title}
                 </h2>
               </Link>
               <Link href={result.image.contextLink}>
-                <p className='group-hover:underline text-gray-600'>
+                <p className='group-hover:underline text-gray-600 dark:text-gray-200'>
                   {result.displayLink}
                 </p>
               </Link>
             </div>
-            <hr className='bg-slate-50 mt-2 shadow-sm'/>
+            <div className="border-b pt-2 shadow-md border-gray-200 dark:border-gray-500"></div>
+            {/* <hr className='bg-slate-800 mt-2 shadow-sm'/> */}
           </div>
           
         ))}

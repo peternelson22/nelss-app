@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { TbGridDots } from 'react-icons/tb';
 import SignInButton from './SignInButton';
+import DarkMode from '@/theme/darkmode';
 
 const HomeHeader = () => {
   return (
@@ -8,7 +9,7 @@ const HomeHeader = () => {
       <div className='flex space-x-4 items-center'>
         <Link
           href='https://github.com/peternelson22'
-          className='hover:underline'
+          className='hover:underline dark:text-red'
         >
           Nmail
         </Link>
@@ -19,6 +20,7 @@ const HomeHeader = () => {
           Images
         </Link>
         <TbGridDots className='bg-transparent hover:bg-gray-200 rounded-full text-4xl p-2' />
+        <DarkMode />
         <SignInButton />
       </div>
     </header>

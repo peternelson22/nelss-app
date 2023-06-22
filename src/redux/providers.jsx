@@ -3,6 +3,6 @@
 import { store } from './store';
 import { Provider } from 'react-redux';
 
-export const Providers = ({ children }) => {
+export const ReduxProviders = ({ children }) => {
   return <Provider store={store}>{children}</Provider>;
 };

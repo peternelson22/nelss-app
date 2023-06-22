@@ -14,6 +14,7 @@ export default function Home() {
           width='200'
           height='40'
           alt='Nelss Logo'
+          className='motion-safe:animate-pulse rounded-full bg-gradient-to-r from-amber-200 to-amber-600'
         />
         <HomeSearch />
       </div>

@@ -30,14 +30,14 @@ const HomeSearch = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className='flex w-full mt-5 mx-auto max-w-[90%] sm:max-w-xl lg:max-w-2xl border border-gray-200 px-5 py-3 rounded-full focus:shadow-md hover:shadow-md transition-shadow'
+        className='flex items-center justify-center w-full mt-5 mx-auto max-w-[90%] sm:max-w-xl lg:max-w-2xl border border-gray-200 dark:border-gray-500 px-5 py-2 rounded-full focus:shadow-md hover:shadow-md transition-shadow'
       >
         <AiOutlineSearch className='text-xl text-gray-500 mr-3' />
         <input
           onChange={(e) => setInput(e.target.value)}
           value={input}
           type='text'
-          className='flex-grow focus: outline-none'
+          className='flex-grow focus: outline-none bg-white rounded py-1 dark:bg-gray-700'
         />
         <BsFillMicFill className='text-lg cursor-pointer' />
       </form>

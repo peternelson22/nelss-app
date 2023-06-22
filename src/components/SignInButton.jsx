@@ -8,9 +8,9 @@ const SignInButton = () => {
   return (
     <button
       onClick={() =>
-        alert(`Hey... you from ${country}, I'm cummmming soooon (nelson)`)
+        alert(`Hey... you from ${country}, I'm coming soooon (nelson)`)
       }
-      className='bg-yellow-300 text-white ml-2 sm:px-6 px-2 sm:py-2 py-1 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-all whitespace-nowrap'
+      className='bg-yellow-400 text-gray-100 ml-2 sm:px-6 px-2 sm:py-2 py-1 font-medium rounded-md hover:brightness-105 shadow-md dark:shadow-amber-400 transition-all whitespace-nowrap'
     >
       Sign in
     </button>

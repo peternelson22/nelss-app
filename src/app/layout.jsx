@@ -1,20 +1,23 @@
 import Footer from '@/components/Footer';
 import './globals.css';
-import { Providers } from '@/redux/providers';
+import { ReduxProviders } from '@/redux/providers';
+import ThemeProviders from '../theme/providers';
 
 export const metadata = {
-  title: 'Nelss',
-  description: 'A demo project to build Nelss',
+  title: 'NELSS - The new standard',
+  description: 'A project to build Nelss',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className='relative min-h-screen'>
-        <Providers>
-          {children}
-          <Footer />
-        </Providers>
+        <ThemeProviders>
+          <ReduxProviders>
+            {children}
+            <Footer />
+          </ReduxProviders>
+        </ThemeProviders>
       </body>
     </html>
   );
