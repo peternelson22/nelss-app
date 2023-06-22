@@ -41,9 +41,9 @@ const HomeSearch = () => {
         />
         <BsFillMicFill className='text-lg cursor-pointer' />
       </form>
-      <div className='flex flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8'>
+      <div className='flex flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8 mb-8'>
         <button onClick={handleSubmit} className='btn'>
-          Google search
+          Search Nelss
         </button>
         <button disabled={loading} onClick={randomSearch} className='btn flex items-center justify-center disabled:opacity-80'>
           {loading ? (

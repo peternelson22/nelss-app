@@ -36,9 +36,9 @@ const SearchBox = () => {
         className='hidden sm:inline-flex text-2xl text-gray-500 cursor-pointer sm:mr-2'
         onClick={clearSearch}
       />
-      <BsFillMicFill className='hidden sm:inline-flex text-4xl text-blue-500 pl-4 border-l-2 border-gray-300 mr-3' />
+      <BsFillMicFill className='hidden sm:inline-flex text-4xl text-yellow-500 pl-4 border-l-2 border-gray-300 mr-3' />
       <AiOutlineSearch
-        className='text-2xl hidden sm:inline-flex text-blue-500 cursor-pointer'
+        className='text-2xl hidden sm:inline-flex text-yellow-500 cursor-pointer'
         onClick={handleSubmit}
       />
     </form>

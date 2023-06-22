@@ -20,7 +20,7 @@ const WebSearch = async ({ searchParams }) => {
         <h1 className='text-3xl mb-4'> No results found</h1>
         <p className='text-lg'>
           Try searching something else or go back to home page{' '}
-          <Link href='/' className='text-blue-500'>
+          <Link href='/' className='text-yellow-300'>
             Home
           </Link>
         </p>

@@ -16,7 +16,7 @@ const WebSearchResults = ({ results }) => {
               {result.formattedUrl}
             </Link>
             <Link
-              className='group-hover:underline decoration-blue-800 text-xl truncate font-medium text-blue-800'
+              className='group-hover:underline decoration-yellow-800 text-xl truncate font-medium text-yellow-700'
               href={result.link}
             >
               {result.title}

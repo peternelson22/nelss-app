@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 const ImageSearchResults = ({ results }) => {
   return (
     <div className='sm:pb-24 pb-40 mt-4'>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-3 space-x-4'>
+      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-3 space-x-2'>
         {results.items.map((result) => (
           <div key={result.link} className='mb-8'>
             <div className='group'>
@@ -13,11 +13,11 @@ const ImageSearchResults = ({ results }) => {
                 <img
                   src={result.link}
                   alt={result.title}
-                  className='h-60 group-hover:shadow-xl w-full rounded-md object-contain transition-shadow '
+                  className='h-52 group-hover:shadow-xl w-full rounded-md object-contain transition-shadow '
                 />
               </Link>
               <Link href={result.image.contextLink}>
-                <h2 className='group-hover:underline truncate text-xl'>
+                <h2 className='group-hover:underline truncate text-sm text-yellow-700'>
                   {result.title}
                 </h2>
               </Link>
@@ -27,8 +27,11 @@ const ImageSearchResults = ({ results }) => {
                 </p>
               </Link>
             </div>
+            <hr className='bg-slate-50 mt-2 shadow-sm'/>
           </div>
+          
         ))}
+        
       </div>
       <div className='sm:ml-8 ml-0'>
         <Pagination />

@@ -19,7 +19,7 @@ const SearchHeaderOptions = () => {
       <div
         onClick={() => selectTab('All')}
         className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 ${
-          path === '/search/web' && '!text-blue-600 !border-blue-600'
+          path === '/search/web' && '!text-yellow-400 !border-yellow-600'
         }`}
       >
         <AiOutlineSearch className='text-md' />
@@ -28,7 +28,7 @@ const SearchHeaderOptions = () => {
       <div
         onClick={() => selectTab('Images')}
         className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 ${
-          path === '/search/image' && '!text-blue-600 !border-blue-600'
+          path === '/search/image' && '!text-yellow-400 !border-yellow-600'
         }`}
       >
         <AiOutlineCamera className='text-md' />

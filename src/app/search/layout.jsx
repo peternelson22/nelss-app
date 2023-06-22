@@ -2,8 +2,8 @@ import SearchHeader from '@/components/SearchHeader'
 import './../globals.css'
 
 export const metadata = {
-  title: 'Google clone',
-  description: 'A demo project to build Google',
+  title: 'Nelss',
+  description: 'A demo project to build Nelss',
 }
 
 export default function SearchLayout({ children }) {

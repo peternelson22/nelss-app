@@ -1,18 +1,21 @@
-import Footer from '@/components/Footer'
-import './globals.css'
+import Footer from '@/components/Footer';
+import './globals.css';
+import { Providers } from '@/redux/providers';
 
 export const metadata = {
-  title: 'Google clone',
-  description: 'A demo project to build Google',
-}
+  title: 'Nelss',
+  description: 'A demo project to build Nelss',
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className='relative min-h-screen'>
-        {children}
-        <Footer />
+        <Providers>
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
-  )
+  );
 }

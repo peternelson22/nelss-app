@@ -11,7 +11,7 @@ const Footer = () => {
           <li className='link'>About</li>
           <li className='link'>Advertising</li>
           <li className='link'>Business</li>
-          <li className='link'>Charity</li>
+          <li className='link'>Developer</li>
         </ul>
         <ul className='flex items-center space-x-6'>
           <li className='link'>Privacy</li>
