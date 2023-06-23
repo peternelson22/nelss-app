@@ -8,12 +8,12 @@ const ImageSearchResults = ({ results }) => {
       <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-3 space-x-2'>
         {results.items.map((result) => (
           <div key={result.link} className='mb-8'>
-            <div className='group'>
+            <div className='group  group-hover:shadow-xl transition-shadow'>
               <Link href={result.image.contextLink}>
                 <img
                   src={result.link}
                   alt={result.title}
-                  className='h-52 group-hover:shadow-xl w-full rounded-md object-contain transition-shadow '
+                  className='h-52 w-full rounded-md object-contain transition-shadow group-hover:brightness-75'
                 />
               </Link>
               <Link href={result.image.contextLink}>
@@ -27,12 +27,10 @@ const ImageSearchResults = ({ results }) => {
                 </p>
               </Link>
             </div>
-            <div className="border-b pt-2 shadow-md border-gray-200 dark:border-gray-500"></div>
+            <div className='border-b pt-2 shadow-md border-gray-200 dark:border-gray-500'></div>
             {/* <hr className='bg-slate-800 mt-2 shadow-sm'/> */}
           </div>
-          
         ))}
-        
       </div>
       <div className='sm:ml-8 ml-0'>
         <Pagination />

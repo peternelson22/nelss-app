@@ -9,17 +9,17 @@ const HomeHeader = () => {
       <div className='flex space-x-4 items-center'>
         <Link
           href='https://github.com/peternelson22'
-          className='hover:underline dark:text-red'
+          className='hover:underline dark:text-gray-300'
         >
           Nmail
         </Link>
         <Link
           href='https://github.com/peternelson22'
-          className='hover:underline'
+          className='hover:underline dark:text-gray-300'
         >
           Images
         </Link>
-        <TbGridDots className='bg-transparent hover:bg-gray-200 rounded-full text-4xl p-2' />
+        <TbGridDots className='bg-transparent hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full text-4xl p-2' />
         <DarkMode />
         <SignInButton />
       </div>

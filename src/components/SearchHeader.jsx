@@ -19,17 +19,17 @@ const SearchHeader = () => {
             width={60}
             height={20}
             alt='Google Logo'
-            className='rounded-md dark:motion-safe:animate-ping'
+            className='rounded-md dark:motion-safe:animate-bounce dark:opacity-30'
           />
         </Link>
         <div className='flex-1'>
           <SearchBox />
         </div>
-        <DarkMode />
-        <div className='hidden md:inline-flex space-x-1 pl-2'>
+        <div className='hidden md:inline-flex space-x-1 pl-1 mr-2'>
           <RiSettings3Line className='header-icon' />
           <TbGridDots className='header-icon' />
         </div>
+        <DarkMode />
         <SignInButton />
       </div>
       <SearchHeaderOptions />

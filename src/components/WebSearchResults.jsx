@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 const WebSearchResults = ({ results }) => {
   return (
     <div className='w-full mx-auto px-3 pb-40 sm:pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52'>
-      <p className='text-gray-600 dark:text-gray-200 text-sm mb-5 mt-3'>
+      <p className='text-gray-800 dark:text-gray-400 text-sm mb-5 mt-3'>
         About {results.searchInformation?.formattedTotalResults} results (
         {results.searchInformation?.formattedSearchTime} seconds)
       </p>
