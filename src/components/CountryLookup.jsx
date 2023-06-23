@@ -2,6 +2,7 @@
 
 import { getCountry } from '@/redux/features/countrySlice';
 import { useEffect, useState } from 'react';
+import { MdLocationPin } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 
 const CountryLookup = () => {
@@ -15,6 +16,6 @@ const CountryLookup = () => {
   }, []);
 
   dispatch(getCountry(country));
-  return <div>{country}</div>;
+  return <div className='flex items-center'><MdLocationPin/> {country}</div>;
 };
 export default CountryLookup;
