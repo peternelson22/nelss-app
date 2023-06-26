@@ -30,22 +30,26 @@ const HomeSearch = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className='flex items-center justify-center w-full mt-5 mx-auto max-w-[90%] sm:max-w-xl lg:max-w-2xl border border-gray-200 dark:border-gray-600 px-5 py-2 rounded-full focus:shadow-md hover:shadow-md transition-shadow'
+        className='flex items-center justify-center w-full mt-5 mx-auto max-w-[90%] sm:max-w-xl lg:max-w-2xl border border-gray-200 dark:border-gray-800 px-5 py-2 rounded-full focus:shadow-md hover:shadow-md transition-shadow'
       >
         <AiOutlineSearch className='text-xl text-gray-500 mr-3' />
         <input
           onChange={(e) => setInput(e.target.value)}
           value={input}
           type='text'
-          className='flex-grow focus: outline-none bg-white rounded py-1 dark:bg-gray-700'
+          className='flex-grow focus: outline-none bg-white rounded py-1 dark:bg-[#131417] text-gray-100 tracking-wide'
         />
-        <BsFillMicFill className='text-lg cursor-pointer' />
+        <BsFillMicFill className='text-lg cursor-pointer text-gray-400' />
       </form>
       <div className='flex flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8 mb-8'>
         <button onClick={handleSubmit} className='btn'>
           Search Nelss
         </button>
-        <button disabled={loading} onClick={randomSearch} className='btn flex items-center justify-center disabled:opacity-80'>
+        <button
+          disabled={loading}
+          onClick={randomSearch}
+          className='btn flex items-center justify-center disabled:opacity-80'
+        >
           {loading ? (
             <Image
               src='spinner.svg'
@@ -60,6 +64,6 @@ const HomeSearch = () => {
         </button>
       </div>
     </>
-  )
+  );
 }
 export default HomeSearch

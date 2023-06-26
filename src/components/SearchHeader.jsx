@@ -9,7 +9,7 @@ import DarkMode from '@/theme/darkmode';
 
 const SearchHeader = () => {
   return (
-    <header className='sticky top-0 bg-white dark:bg-gray-700'>
+    <header className='sticky top-0 bg-white dark:bg-[#131417]'>
       <div className='flex w-full p-6 items-center justify-between'>
         <Link href={'/'}>
           <Image

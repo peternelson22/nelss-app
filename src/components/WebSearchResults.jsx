@@ -25,7 +25,7 @@ const WebSearchResults = ({ results }) => {
           <p className='text-gray-600 dark:text-gray-200  '>
             {Parser(result.htmlSnippet)}
           </p>
-          <p className='border-b  border-gray-200 dark:border-gray-500 shadow-sm pt-3'></p>
+          <p className='border-b  border-gray-200 dark:border-gray-800 shadow-sm pt-3'></p>
           {/* <hr className='mt-2 text-gray-600 bg-gray-200 dark:bg-gray-800 dark:hidden shadow-sm'/> */}
         </div>
       ))}

@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply bg-[#f2f2f2] dark:bg-[#3d4142] dark:text-gray-400 dark:hover:ring-0 rounded-md text-sm text-gray-800 hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow;
+    @apply bg-[#f2f2f2] dark:bg-[#2B2B2B] dark:text-gray-400 dark:hover:ring-0 rounded-md text-sm text-gray-800 hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow;
   }
   .link {
     @apply hover:underline cursor-pointer;

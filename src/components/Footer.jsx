@@ -2,7 +2,7 @@ import CountryLookup from './CountryLookup';
 
 const Footer = () => {
   return (
-    <footer className='absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full dark:bg-[#3d4142] dark:text-gray-200'>
+    <footer className='absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full dark:bg-[#2B2B2B] dark:text-gray-200'>
       <div className='border-b border-b-gray-200 dark:border-b-gray-600 px-8 py-3'>
         <CountryLookup />
       </div>

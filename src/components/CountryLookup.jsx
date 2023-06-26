@@ -16,6 +16,13 @@ const CountryLookup = () => {
   }, []);
 
   dispatch(getCountry(country));
-  return <div className='flex items-center'><MdLocationPin/> {country}</div>;
+  return (
+    <div className='flex items-center'>
+      <span className='text-amber-500/60'>
+        <MdLocationPin />
+      </span>{' '}
+      {country}
+    </div>
+  );
 };
 export default CountryLookup;

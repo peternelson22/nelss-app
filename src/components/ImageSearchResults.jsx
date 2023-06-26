@@ -27,7 +27,7 @@ const ImageSearchResults = ({ results }) => {
                 </p>
               </Link>
             </div>
-            <div className='border-b pt-2 shadow-md border-gray-200 dark:border-gray-500'></div>
+            <div className='border-b pt-2 shadow-md border-gray-200 dark:border-gray-800'></div>
             {/* <hr className='bg-slate-800 mt-2 shadow-sm'/> */}
           </div>
         ))}
