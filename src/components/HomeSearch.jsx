@@ -37,7 +37,7 @@ const HomeSearch = () => {
           onChange={(e) => setInput(e.target.value)}
           value={input}
           type='text'
-          className='flex-grow focus: outline-none bg-white rounded py-1 dark:bg-[#131417] text-gray-100 tracking-wide'
+          className='flex-grow focus: outline-none bg-white rounded py-1 dark:bg-[#131417] text-gray-900 dark:text-gray-50 tracking-wide'
         />
         <BsFillMicFill className='text-lg cursor-pointer text-gray-400' />
       </form>
