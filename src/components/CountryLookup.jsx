@@ -1,21 +1,29 @@
 'use client';
 
-import { getCountry } from '@/redux/features/countrySlice';
-import { useEffect, useState } from 'react';
+import { getCountry, selectCountry } from '@/redux/features/countrySlice';
+import { useEffect } from 'react';
 import { MdLocationPin } from 'react-icons/md';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const CountryLookup = () => {
-  const [country, setCountry] = useState('France');
   const dispatch = useDispatch();
+  const country = useSelector(selectCountry);
+
+  const fetchCountry = async () => {
+    const res = await fetch(
+      `https://api.ipregistry.co/?key=${process.env.NEXT_PUBLIC_API_KEY}`
+    );
+    const data = await res.json();
+
+    const country = dispatch(getCountry(data.location.country.name));
+    console.log(country);
+    return country.payload;
+  };
 
   useEffect(() => {
-    fetch(`https://api.ipregistry.co/?key=${process.env.NEXT_PUBLIC_API_KEY}`)
-      .then((res) => res.json())
-      .then((data) => setCountry(data.location.country.name));
+    fetchCountry();
   }, []);
 
-  dispatch(getCountry(country));
   return (
     <div className='flex items-center'>
       <span className='text-amber-500/60'>

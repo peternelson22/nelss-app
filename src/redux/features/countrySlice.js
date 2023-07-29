@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
 import { createSlice } from '@reduxjs/toolkit';
 
 export const countrySlice = createSlice({
   name: 'country',
   initialState: {
-    country: null,
+    country: 'France',
   },
   reducers: {
     getCountry: (state, action) => {
